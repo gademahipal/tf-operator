@@ -163,7 +163,8 @@ def main(unused_argv):
           worker_device=worker_device,
           ps_device="/job:ps/cpu:0",
           cluster=cluster)):
-#    global_step = tf.Variable(0, name="global_step", trainable=False)
+    global_step = tf.Variable(0, name="global_step", trainable=False)
+    print ("globale_step= {}".format(global_step))
     global_step = 200000
 
     # Variables of the hidden layer
