@@ -165,7 +165,6 @@ def main(unused_argv):
           cluster=cluster)):
     global_step = tf.Variable(0, name="global_step", trainable=False)
     print ("globale_step= {}".format(global_step))
-    global_step = 200000
 
     # Variables of the hidden layer
     hid_w = tf.Variable(
